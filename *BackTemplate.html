@@ -28,140 +28,134 @@
 
   
 <!-- LECTURE NOTES FIELD -->
-  {{#Lecture Notes}}<a href="#" id="hint-ln" onclick="this.style.display='none'; myFunction('button-ln'); return false;">
-  <button class="button-ln"><img src="_Anking_v3.png"> Lecture Notes</button></a>{{/Lecture Notes}}
+{{#Lecture Notes}}<a href="#" id="hint-ln" onclick="this.style.display='none'; myFunction('button-ln', 'hint-ln', 'button-ln'); return false;">
+<button class="button-ln"><img src="_Anking_v3.png"> Lecture Notes</button></a>{{/Lecture Notes}}
 
-  <div id="button-ln" class="generalclass" style="display:none;">
-  {{#Lecture Notes}}<button onclick="document.getElementById('hint-ln').style.display='inline-block'; myFunction('button-ln')" class="button-ln" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_Anking_v3.png"> Lecture Notes</button>
-  <br><div class=hints id=lecture>{{edit:Lecture Notes}}</div>{{/Lecture Notes}}</div>
+<div id="button-ln" class="generalclass" style="display:none;">
+{{#Lecture Notes}}<button onclick="document.getElementById('hint-ln').style.display='inline-block'; myFunction('button-ln', 'hint-ln', 'button-ln')" class="button-ln" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_Anking_v3.png"> Lecture Notes</button>
+<br><div class=hints id=lecture>{{edit:Lecture Notes}}</div>{{/Lecture Notes}}</div>
 
- 
+
 <!-- MISSED QUESTIONS FIELD --> 
-  {{#Missed Questions}}<a href="#" id="hint-mq" onclick="this.style.display='none'; myFunction('button-mq'); return false;">
-  <button class="button-mq"><img src="_Anking_v3.png"> Missed Questions</button></a>{{/Missed Questions}}
+{{#Missed Questions}}<a href="#" id="hint-mq" onclick="this.style.display='none'; myFunction('button-mq', 'hint-mq', 'button-mq'); return false;">
+<button class="button-mq"><img src="_Anking_v3.png"> Missed Questions</button></a>{{/Missed Questions}}
 
-  <div id="button-mq" class="generalclass" style="display:none;">
-  {{#Missed Questions}}<button onclick="document.getElementById('hint-mq').style.display='inline-block'; myFunction('button-mq')" class="button-mq" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_Anking_v3.png"> Missed Questions</button>
-  <br><div class=hints id=missed>{{edit:Missed Questions}}</div>{{/Missed Questions}}</div>
+<div id="button-mq" class="generalclass" style="display:none;">
+{{#Missed Questions}}<button onclick="document.getElementById('hint-mq').style.display='inline-block'; myFunction('button-mq', 'hint-mq', 'button-mq')" class="button-mq" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_Anking_v3.png"> Missed Questions</button>
+<br><div class=hints id=missed>{{edit:Missed Questions}}</div>{{/Missed Questions}}</div>
 
 
 <!-- PATHOMA FIELD -->    
-  {{#Pathoma}}<a href="#" id="hint-pat" onclick="this.style.display='none'; myFunction('button-pat'); return false;">
-  <button class="button-pat"><img src="_pathoma.icon.png"></button></a>{{/Pathoma}}
+{{#Pathoma}}<a href="#" id="hint-pat" onclick="this.style.display='none'; myFunction('button-pat', 'hint-pat', 'button-pat'); return false;">
+<button class="button-pat"><img src="_pathoma.icon.png"></button></a>{{/Pathoma}}
 
-  <div id="button-pat" class="generalclass" style="display:none;">
-  {{#Pathoma}}<button onclick="document.getElementById('hint-pat').style.display='inline-block'; myFunction('button-pat')" class="button-pat" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_pathoma.icon.png"></button>
-  <br><div class=hints id=pathoma>{{edit:Pathoma}}</div>{{/Pathoma}}</div>
+<div id="button-pat" class="generalclass" style="display:none;">
+{{#Pathoma}}<button onclick="document.getElementById('hint-pat').style.display='inline-block'; myFunction('button-pat', 'hint-pat', 'button-pat')" class="button-pat" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_pathoma.icon.png"></button>
+<br><div class=hints id=pathoma>{{edit:Pathoma}}</div>{{/Pathoma}}</div>
 
 
 <!-- BOARDS AND BEYOND FIELD -->   
-  {{#Boards and Beyond}}<a href="#" id="hint-bb" onclick="this.style.display='none'; myFunction('button-bb'); return false;">
-  <button class="button-bb"><img src="_b&b.icon.png"> Boards and Beyond</button></a>{{/Boards and Beyond}}
-  
-  <div id="button-bb" class="generalclass" style="display:none;">
-  {{#Boards and Beyond}}<button onclick="document.getElementById('hint-bb').style.display='inline-block'; myFunction('button-bb')" class="button-bb" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_b&b.icon.png"> Boards and Beyond</button>
-  <br><div class=hints id=bnb>{{edit:Boards and Beyond}}</div>{{/Boards and Beyond}}</div>
+{{#Boards and Beyond}}<a href="#" id="hint-bb" onclick="this.style.display='none'; myFunction('button-bb', 'hint-bb', 'button-bb'); return false;">
+<button class="button-bb"><img src="_b&b.icon.png"> Boards and Beyond</button></a>{{/Boards and Beyond}}
+
+<div id="button-bb" class="generalclass" style="display:none;">
+{{#Boards and Beyond}}<button onclick="document.getElementById('hint-bb').style.display='inline-block'; myFunction('button-bb', 'hint-bb', 'button-bb')" class="button-bb" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_b&b.icon.png"> Boards and Beyond</button>
+<br><div class=hints id=bnb>{{edit:Boards and Beyond}}</div>{{/Boards and Beyond}}</div>
 
 
 <!-- EXTRA FIELD -->      
-  <p></p>{{#Extra}}<div id=extra>{{edit:Extra}}</div>{{/Extra}}<br>
-  <div id="testscroll"></div>
+<p></p>{{#Extra}}<div id=extra>{{edit:Extra}}</div>{{/Extra}}<br>
+<div id="testscroll"></div>
 
 
 <!-- FIRST AID FIELD -->       
-  {{#First Aid}}<a href="#" id="hint-fa" onclick="this.style.display='none'; myFunction('button-fa'); return false;">
-  <button class="button-fa"><img src="_first-aid.icon_v2.1.png">First Aid</button></a>{{/First Aid}}
+{{#First Aid}}<a href="#" id="hint-fa" onclick="this.style.display='none'; myFunction('button-fa', 'hint-fa', 'button-fa'); return false;">
+<button class="button-fa"><img src="_first-aid.icon_v2.1.png">First Aid</button></a>{{/First Aid}}
 
-  <div id="button-fa" class="generalclass" style="display:none;">
-  {{#First Aid}}<button onclick="document.getElementById('hint-fa').style.display='inline-block'; myFunction('button-fa')" class="button-fa" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_first-aid.icon_v2.1.png">First Aid</button>
-  <div class=hints id=firstaid>{{edit:First Aid}}</div>{{/First Aid}}</div>
+<div id="button-fa" class="generalclass" style="display:none;">
+{{#First Aid}}<button onclick="document.getElementById('hint-fa').style.display='inline-block'; myFunction('button-fa', 'hint-fa', 'button-fa')" class="button-fa" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_first-aid.icon_v2.1.png">First Aid</button>
+<div class=hints id=firstaid>{{edit:First Aid}}</div>{{/First Aid}}</div>
 
 
 <!-- SKETCHY FIELD -->       
-  {{#Sketchy}}<a href="#" id="hint-sketchy" onclick="this.style.display='none'; myFunction('button-sketchy'); return false;">
-  <button class="button-sketchy"><img src="_sketchy.icon.png"> Sketchy</button></a>{{/Sketchy}}
+{{#Sketchy}}<a href="#" id="hint-sketchy" onclick="this.style.display='none'; myFunction('button-sketchy', 'hint-sketchy', 'button-sketchy'); return false;">
+<button class="button-sketchy"><img src="_sketchy.icon.png"> Sketchy</button></a>{{/Sketchy}}
 
-  <div id="button-sketchy" class="generalclass" style="display:none;">
-  {{#Sketchy}}<button onclick="document.getElementById('hint-sketchy').style.display='inline-block'; myFunction('button-sketchy')" class="button-sketchy" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_sketchy.icon.png"> Sketchy</button>
-  <br><div class=hints id=sketchy>{{edit:Sketchy}}</div>{{/Sketchy}}</div>
+<div id="button-sketchy" class="generalclass" style="display:none;">
+{{#Sketchy}}<button onclick="document.getElementById('hint-sketchy').style.display='inline-block'; myFunction('button-sketchy', 'hint-sketchy', 'button-sketchy')" class="button-sketchy" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_sketchy.icon.png"> Sketchy</button>
+<br><div class=hints id=sketchy>{{edit:Sketchy}}</div>{{/Sketchy}}</div>
 
 
 <!-- PHYSEO FIELD -->       
-  {{#Physeo}}<a href="#" id="hint-physeo" onclick="this.style.display='none'; myFunction('button-physeo'); return false;">
-  <button class="button-physeo"><img src="_physeologo.icon.png"></button></a>{{/Physeo}}
+{{#Physeo}}<a href="#" id="hint-physeo" onclick="this.style.display='none'; myFunction('button-physeo', 'hint-physeo', 'button-physeo'); return false;">
+<button class="button-physeo"><img src="_physeologo.icon.png"></button></a>{{/Physeo}}
 
-  <div id="button-physeo" class="generalclass" style="display:none;">
-  {{#Physeo}}<button onclick="document.getElementById('hint-physeo').style.display='inline-block'; myFunction('button-physeo')" class="button-physeo" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_physeologo.icon.png"></button>
-  <br><div class=hints id=physeo>{{edit:Physeo}}</div>{{/Physeo}}</div>
+<div id="button-physeo" class="generalclass" style="display:none;">
+{{#Physeo}}<button onclick="document.getElementById('hint-physeo').style.display='inline-block'; myFunction('button-physeo', 'hint-physeo', 'button-physeo')" class="button-physeo" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_physeologo.icon.png"></button>
+<br><div class=hints id=physeo>{{edit:Physeo}}</div>{{/Physeo}}</div>
 
 
 <!-- ADDITIONAL RESOURCES FIELD -->      
-  {{#Additional Resources}}<a href="#" id="hint-ar" onclick="this.style.display='none'; myFunction('button-ar'); return false;">
-  <button class="button-ar"><img src="_Anking_v3.png"> Additional Resources</button></a>{{/Additional Resources}}
-  
-  <div id="button-ar" class="generalclass" style="display:none;">
-  {{#Additional Resources}}<button onclick="document.getElementById('hint-ar').style.display='inline-block'; myFunction('button-ar')" class="button-ar" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_Anking_v3.png"> Additional Resources</button>
-  <br><div class=hints id=additional>{{edit:Additional Resources}}</div>{{/Additional Resources}}</div>
-  
+{{#Additional Resources}}<a href="#" id="hint-ar" onclick="this.style.display='none'; myFunction('button-ar', 'hint-ar', 'button-ar'); return false;">
+<button class="button-ar"><img src="_Anking_v3.png"> Additional Resources</button></a>{{/Additional Resources}}
 
-  
+<div id="button-ar" class="generalclass" style="display:none;">
+{{#Additional Resources}}<button onclick="document.getElementById('hint-ar').style.display='inline-block'; myFunction('button-ar', 'hint-ar', 'button-ar')" class="button-ar" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_Anking_v3.png"> Additional Resources</button>
+<br><div class=hints id=additional>{{edit:Additional Resources}}</div>{{/Additional Resources}}</div>
 
- 
-  
+
+
+
+
+
 <script>
-//SCROLL TO ANSWER
-function scrollToId (id) {
-const element = document.getElementById(id);
-const elementRect = element.getBoundingClientRect();
-const absoluteElementTop = elementRect.top + window.pageYOffset;
-const middle = absoluteElementTop - (window.innerHeight / 2);
-window.scrollTo(0, middle);
-}
-
 //HINT REVEALS
-function myFunction(divid, id) {
-var x = document.getElementById(divid), y = document.getElementById(id);
+function myFunction(divid, id, divid) {
+var x = document.getElementById(divid), y = document.getElementById(id), z = document.getElementById(divid);
 if (x.style.display == "none")
 {
-x.style.display = "block"; y.style.display = "none";
-scrollToId(divid);
+x.style.display = "block"; y.style.display = "none"; z.scrollToId;
 }
-    else {
-      x.style.display = "none"; y.style.display = "inline-block";
-    }  
+  else {
+    x.style.display = "none"; y.style.display = "inline-block";
   }
-  document.onkeydown = function(evt) {
-      evt = evt || window.event;
-      if (evt.altKey && evt.keyCode == 49) {
-          myFunction('button-ln', 'hint-ln')}  
-      if (evt.altKey && evt.keyCode == 50) {
-          myFunction('button-mq', 'hint-mq')}
-      if (evt.altKey && evt.keyCode == 51) {
-          myFunction('button-pat', 'hint-pat')}
-      if (evt.altKey && evt.keyCode == 52) {
-          myFunction('button-bb', 'hint-bb')}
-      if (evt.altKey && evt.keyCode == 53) {
-          myFunction('button-fa', 'hint-fa')}
-      if (evt.altKey && evt.keyCode == 54) {
-          myFunction('button-sketchy', 'hint-sketchy')}
-      if (evt.altKey && evt.keyCode == 55) {
-          myFunction('button-physeo', 'hint-physeo')}
-      if (evt.altKey && evt.keyCode == 56) {
-          myFunction('button-ar', 'hint-ar')}
-  
-      if (evt.keyCode == 222) {
-      try{myFunction('button-ar', 'hint-ar');}
-      finally{try{myFunction('button-mq', 'hint-mq');}
-      finally{try{myFunction('button-pat', 'hint-pat');}
-      finally{try{myFunction('button-bb', 'hint-bb');}
-      finally{try{myFunction('button-fa', 'hint-fa');}
-      finally{try{myFunction('button-sketchy', 'hint-sketchy');}
-      finally{try{myFunction('button-physeo', 'hint-physeo');}
-      finally{myFunction('button-ln', 'hint-ln');}}}}}}}
-      }
-  }
-  </script>
+z.scrollIntoView({
+behavior: "smooth", //"auto" for instant scrolling
+block: "start",
+inline: "nearest"
+}); 
+}
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.altKey && evt.keyCode == 49) {
+        myFunction('button-ln', 'hint-ln', 'button-ln')}  
+    if (evt.altKey && evt.keyCode == 50) {
+        myFunction('button-mq', 'hint-mq', 'button-mq')}
+    if (evt.altKey && evt.keyCode == 51) {
+        myFunction('button-pat', 'hint-pat', 'button-pat')}
+    if (evt.altKey && evt.keyCode == 52) {
+        myFunction('button-bb', 'hint-bb', 'button-bb')}
+    if (evt.altKey && evt.keyCode == 53) {
+        myFunction('button-fa', 'hint-fa', 'button-fa')}
+    if (evt.altKey && evt.keyCode == 54) {
+        myFunction('button-sketchy', 'hint-sketchy', 'button-sketchy')}
+    if (evt.altKey && evt.keyCode == 55) {
+        myFunction('button-physeo', 'hint-physeo', 'button-physeo')}
+    if (evt.altKey && evt.keyCode == 56) {
+        myFunction('button-ar', 'hint-ar', 'button-ar')}
 
+    if (evt.keyCode == 222) {
+    try{myFunction('button-ar', 'hint-ar', 'button-ar');}
+    finally{try{myFunction('button-physeo', 'hint-physeo', 'button-physeo');}
+    finally{try{myFunction('button-sketchy', 'hint-sketchy', 'button-sketchy');}
+    finally{try{myFunction('button-fa', 'hint-fa', 'button-fa');}
+    finally{try{myFunction('button-bb', 'hint-bb', 'button-bb');}
+    finally{try{myFunction('button-pat', 'hint-pat', 'button-pat');}
+    finally{try{myFunction('button-mq', 'hint-mq', 'button-mq');}
+    finally{myFunction('button-ln', 'hint-ln', 'button-ln');}}}}}}}
+    }
+}
+</script>
 
   
   <br>
