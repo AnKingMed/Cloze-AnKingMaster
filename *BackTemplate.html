@@ -176,9 +176,8 @@ For instructions on how to show a field automatically,  visit www.ankingmed.com/
     inline: "nearest"
   }); 
     }
-    document.onkeydown = function(evt) {
-        evt = evt || window.event;
-        if (evt.altKey && evt.keyCode == lecturenotes) {
+    document.addEventListener('keydown', function(evt) {
+        if (evt.ctrlKey && evt.keyCode == lecturenotes) {
             myFunction('button-ln', 'hint-ln', 'button-ln')}  
         if (evt.altKey && evt.keyCode == missedQ) {
             myFunction('button-mq', 'hint-mq', 'button-mq')}
@@ -205,7 +204,7 @@ For instructions on how to show a field automatically,  visit www.ankingmed.com/
         finally{try{myFunction('button-mq', 'hint-mq', 'button-mq');}
         finally{myFunction('button-ln', 'hint-ln', 'button-ln');}}}}}}}
         }
-    }
+    })
 </script>
 
 
