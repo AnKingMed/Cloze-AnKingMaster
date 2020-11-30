@@ -29,14 +29,14 @@
 /*IPAD ADJUSTMENTS*/
 .ipad .card, .ipad #extra {font-size:28px;}
 .ipad .hints {font-size:24px;}
-.ipad #firstaid, .ipad #sketchy, .ipad #pixorize, .ipad #physeo, .ipad #additional { font-size: 20px!important; }
+.ipad #firstaid, .ipad #sketchy, .ipad #physeo, .ipad #additional { font-size: 20px!important; }
 
 /*HINT FONT SIZE*/ .hints 
 	{ font-size: .85rem; }
    /*First Aid, Sketchy, Physeo, Additional Resources Font Size*/
-	#firstaid, #sketchy, #pixorize, #physeo, #additional { font-size: .6rem !important; } 
+	#firstaid, #sketchy, #physeo, #additional { font-size: .6rem !important; } 
    /*First Aid, Sketchy, Physeo, Additional Resources Font Size on Mobile*/
-  .mobile #firstaid, .mobile #sketchy, .mobile #pixorize, .mobile #physeo, .mobile #additional { font-size: 20px!important; }
+	.mobile #firstaid, .mobile #sketchy, .mobile #physeo, .mobile #additional { font-size: 20px!important; }
 
 /*FONT STYLE*/	
 	.card, kbd { font-family: Arial Greek, Arial; } /*Step exam's font is Arial Greek*/
@@ -44,7 +44,7 @@
 	img {max-height: none; }
  /*MAX IMAGE WIDTH*/
 		#extra img, #lecture img, #missed img, #pathoma img, #bnb img {max-width: 85%; }
-	#firstaid img, #sketchy img, #pixorize img, #physeo img, #additional img {max-width: 60%; }
+	#firstaid img, #sketchy img, #physeo img, #additional img {max-width: 60%; }
 
 
 /* ~~COLORS~~ */
@@ -116,7 +116,7 @@ padding-bottom: 1em;
 .mobile .card {margin: 0ex .3px;}
 
 #extra img { min-width: 30%; }
-.mobile #extra img, .mobile #lecture img, .mobile #missed img, .mobile #pathoma img, .mobile #bnb img, .mobile #firstaid img, .mobile #sketchy img, .mobile #pixorize, .mobile #physeo img, .mobile #additional img {max-width: 100%!important; }
+.mobile #extra img, .mobile #lecture img, .mobile #missed img, .mobile #pathoma img, .mobile #bnb img, .mobile #firstaid img, .mobile #sketchy img, .mobile #physeo img, .mobile #additional img {max-width: 100%!important; }
 
 /* Classes for individual cards */
 .image40 img { width: 40%!important; }
@@ -140,9 +140,14 @@ padding-bottom: 1em;
     .mobile .resizer {min-width:100%!important;}
 
 /*Image hover zoom*/
-#extra img:active, #lecture img:active, #missed img:active, #pathoma img:active, #bnb img:active { transform:scale(1.2); }
-#firstaid img:active, #sketchy img:active, #pixorize img:active, #physeo img:active, #additional img:active { transform:scale(1.5); }
-.mobile #extra img:active, .mobile #lecture img:active, .mobile #missed img:active, .mobile #pathoma img:active, .mobile #bnb img:active, .mobile #firstaid img:active, .mobile #sketchy img:active, .mobile #pixorize img:active, .mobile #physeo img:active, .mobile #additional img:active { transform:scale(1.0); }
+#firstaid img:active { transform:scale(1.5); }
+#sketchy img:active { transform:scale(1.5); }
+#physeo img:active { transform:scale(1.5); }
+#additional img:active { transform:scale(1.5); }
+.mobile #firstaid img:active { transform:scale(1.0); }
+.mobile #sketchy img:active { transform:scale(1.0); }
+.mobile #physeo img:active { transform:scale(1.0); }
+.mobile #additional img:active { transform:scale(1.0); }
 
 /* Cloze format */
 .cloze { font-weight: bold; }
