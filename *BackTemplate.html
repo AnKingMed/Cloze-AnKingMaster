@@ -34,8 +34,9 @@
   var bnb = '52'
   var firstaid = '53'
   var sketchy = '54'
-  var physeo = '55'
-  var additional = '56'
+  var pixorize = '55'
+  var physeo = '56'
+  var additional = '57'
   var opencloseall = '222'
 </script>
 
@@ -133,6 +134,17 @@ For instructions on how to show a field automatically,  visit www.ankingmed.com/
   {{/Sketchy}}</div>
 
 
+<!-- PIXORIZE FIELD -->
+{{#Pixorize}}<a href="#" class="hint" id="hint-pixorize" onclick="this.style.display='none'; myFunction('button-pixorize', 'hint-pixorize', 'button-pixorize'); return false;">
+      <button class="button-pixorize"><img src="_pixorize.png"> Pixorize</button></a>{{/Pixorize}}
+
+<div id="button-pixorize" class="generalclass" style="display:none;">
+  {{#Pixorize}}<button onclick="document.getElementById('hint-pixorize').style.display='inline-block'; myFunction('button-pixorize', 'hint-pixorize', 'button-pixorize')" class="button-pixorize" style="background:#ababab; color:black!important; font-weight:bold; width:50%!important;"><img src="_pixorize.png"> Pixorize</button>
+      <br>
+      <div class="hints" id="pixorize">{{edit:Pixorize}}</div>
+  {{/Pixorize}}</div>
+
+
 <!-- PHYSEO FIELD -->
 {{#Physeo}}<a href="#" class="hint" id="hint-physeo" onclick="this.style.display='none'; myFunction('button-physeo', 'hint-physeo', 'button-physeo'); return false;">
       <button class="button-physeo"><img src="_physeologo.icon.png"></button></a>{{/Physeo}}
@@ -189,6 +201,8 @@ For instructions on how to show a field automatically,  visit www.ankingmed.com/
             myFunction('button-fa', 'hint-fa', 'button-fa')}
         if (evt.altKey && evt.keyCode == sketchy) {
             myFunction('button-sketchy', 'hint-sketchy', 'button-sketchy')}
+        if (evt.altKey && evt.keyCode == pixorize) {
+            myFunction('button-pixorize', 'hint-pixorize', 'button-pixorize')}
         if (evt.altKey && evt.keyCode == physeo) {
             myFunction('button-physeo', 'hint-physeo', 'button-physeo')}
         if (evt.altKey && evt.keyCode == additional) {
@@ -197,12 +211,13 @@ For instructions on how to show a field automatically,  visit www.ankingmed.com/
         if (evt.keyCode == opencloseall) {
         try{myFunction('button-ar', 'hint-ar', 'button-ar');}
         finally{try{myFunction('button-physeo', 'hint-physeo', 'button-physeo');}
+        finally{try{myFunction('button-pixorize', 'hint-pixorize', 'button-pixorize');}
         finally{try{myFunction('button-sketchy', 'hint-sketchy', 'button-sketchy');}
         finally{try{myFunction('button-fa', 'hint-fa', 'button-fa');}
         finally{try{myFunction('button-bb', 'hint-bb', 'button-bb');}
         finally{try{myFunction('button-pat', 'hint-pat', 'button-pat');}
         finally{try{myFunction('button-mq', 'hint-mq', 'button-mq');}
-        finally{myFunction('button-ln', 'hint-ln', 'button-ln');}}}}}}}
+        finally{myFunction('button-ln', 'hint-ln', 'button-ln');}}}}}}}}
         }
     })
 </script>
